@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Moodtoob</title>
+        <link rel="shortcut icon" type="image/jpg" href="./icons/moodtoob_favicon.jpg"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <script data-ad-client="ca-pub-2325129966367999" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </head>
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Moodtube</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="./style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+     
+    <body>
+        <div class="navBar">
+            <span>
+                <a href="https://www.moodtoob.com/"><img src="./icons/moodtoob_logo.png" class="icon" id="toHome"></a>
+                <p id="toHomeText" style="display:none">moodtoob</p>
+            </span>
+            <span>
+                <a href="https://merchtoob.bigcartel.com/" target="_blank"><img src="./icons/merchtoob_logo.png" class="icon"></a>
+                <p id="toMerch" style="display:none">merchtoob</p>
+            </span> 
+        </div>
+     
+        <section class="landingPage" id="" style="display:block" data-show>  
+            <div class="welcome">
+                <div class="toForm">
+                    <img src="./icons/MagicCrystal-01.png" alt="magic mood rock" class="magicCrystal" id="magicRock">
+                </div>
+                <div class="newUser" id="newUser">
+                    <h3 class="greeting1">welcome to moodtoob!</h3>
+                    <h4 class="greeting2">click the magic mood rock <br> to have your mood analyzed!</h4>
+                </div>
+                <!--Video Tag
+                <video id="webVideo" width="720" height="560"></video>-->
+            </div>
+        </section>
+ 
+        <section class="submissionPage" style="display:none" data-hide> 
+     
+            <div class="container">
+                <!--Form is - allows callbacks when form validation fails, just before the form is submitted, and after the server has responded. The ability to send custom headers to the server with the submit request. Prevention of a page reload/redirect on submit.-->
+                <!--Form only allows .JPEG & .PNG per Face Plus Plus (img_file???)-->
+                <div class="submissionPrompt">
+                    <img src="./icons/CrystalBall_Initial.png" class="moodorb"><h3 class="submissionGreeting">what's your <b>mood?</b></h3> 
+                    <h4 class="submissionButtons">
+                        <form enctype="multipart/form-data"><input type="file" id="testImg" hidden><label for="testImg" class="formbtns"><strong>upload</strong></label> 
+                        a photo ... and
+                        <input type="submit" id="submitBtn" hidden><label for="submitBtn" class="formbtns"><strong>submit!</strong></label></form>
+                    </h4>
+
+                </div>
+
+                <div class="dispText" id="faceValidation"> </div> 
+    <!-- maybe make ^ this our div for the typeout?
+        stuff that could be put there:
+            - invalid photo mssg
+            - facevalidation confirmation or failure mssg
+            - application 'analyzing' your photo, only a line or two at most so it's not annoying. -->
+    
+                <div>
+                    <div id="myVideo">
+
+                        <div class="appendBtnDisp">
+                            <span class="dispText" id="moodDisplay"></span>
+                        </div>
+
+                        <div id='player'></div>
+
+                        <span id='btn'></span>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="./emotions.js"></script>
+        <script src="./brains.js"></script>
+    </body>
+</html>

@@ -1,0 +1,332 @@
+
+body{
+    color: #fff4de;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #101c25;
+}
+
+
+.formbtns{
+    color: #a15f99;
+    cursor: pointer;; 
+}
+
+.formbtns:hover{
+    color:  #fff4de;
+}
+
+
+/* ==================== NAV ==================== */
+.icon {
+    height: 40px;
+}
+
+.navBar{
+    display: flex;
+    position: relative;
+    z-index: 100;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #101c25;
+    padding: 10px 30px;
+}
+
+@media only screen and (max-width: 700px) {
+    .icon {
+        height: 20px;
+    }
+    .navBar{
+        padding: 10px 10px;
+    }
+
+}
+
+/* ==================== DYNAMIC STYLES ==================== */
+
+#surprise{
+    height: 100%;
+    background-image: 
+        linear-gradient(
+        to bottom right,
+        #ed8632, #ed4558 , #a15f99);
+}
+
+#surprisedMood{
+    color: #ed4558;
+}
+  
+#anger{
+    height: 100%;
+    background-image: 
+        linear-gradient(
+        to bottom right,
+        #fb9841, #ed4a1d, #d53e27);
+    /* color: #d53e27; */
+}
+
+#angryMood{
+    color: #d53e27;
+}
+ 
+#disgusted{
+    height: 100%;
+    background-image: 
+        linear-gradient(
+        to bottom right,
+        #ffe016, #b2d223, #70ab1d);
+}
+
+#disgustedMood{
+    color: #70ab1d;
+}
+ 
+#fear{
+    height: 100%;
+    background-image: 
+        linear-gradient(
+        to bottom right,
+        #ffcd16, #f27906, #46347c);
+}
+
+#fearMood{
+    color: #f27906;
+}
+ 
+#happy{
+    height: 100%;
+    background-image: 
+        linear-gradient(
+        to bottom right,
+        #f27906, #faa106, #2995c0);
+}
+
+#happyMood{
+    color: #2995c0;
+}
+ 
+#sad{
+    height: 100%;
+    background-image: 
+        linear-gradient(
+        to bottom right,
+        #296f9d, #144c80, #2b2f72);
+}
+
+#sadMood{
+    color: #144c80;
+}
+ 
+#neutral{
+    height: 100%;
+    background-image: 
+        linear-gradient(
+        to bottom right,
+        #bde47a, #55ba9a, #3ca1aa);
+}
+
+#neutralMood{
+    color: #55ba9a;
+}
+
+/* ==================== LANDING PAGE ==================== */
+
+.landingPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+ 
+.welcome{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 20px;
+}
+ 
+.newUser{
+    width: 60vw;
+    text-align: right;
+}
+ 
+.greeting1 { /*first header*/
+    font-size: 4vw;
+    font-weight: 700;
+    margin-block-end: .25em;
+}
+ 
+.greeting2 { /*second header*/
+    font-size: 2vw;
+    margin-block-start: .25em;
+    letter-spacing: 1px;
+    justify-content: right;
+}
+
+.toForm{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30vw;
+    background:#101c25;
+    bottom: 0px;
+    transform: skewX(-5deg) translateX(-50px);
+    /* padding: 20px; */
+}
+
+.magicCrystal{
+    height: 10vw;
+    padding: 20px, 0px;
+    position: relative;
+    left: 5vw;
+}
+ 
+
+/* ==================== THE LIMINAL SPACE BETWEEN PAGES ==================== */
+
+.goToForm { /*logic adds this class on click of button*/
+    animation: anim 3.5s forwards;
+}
+
+.magicCrystalYeet{
+    animation: yeet 2s forwards;
+}
+
+@keyframes yeet{
+    0% { }
+    100% { transform: rotate(360deg) translateX(-150%)}
+}
+  
+@keyframes anim{
+       0% { }
+       25%  { z-index:11; transform: translateX(-100%); }
+       55%  {transform: translateX(0);width:100%; background-color: #101c25;}
+       100% {transform: translateX(0%); width:100%; background-color: #101c25;}
+}
+
+.submissionPage{
+	-webkit-animation: moveFromLeft .4s ease both;
+	animation: moveFromLeft .4s ease both;
+}
+
+@-webkit-keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); transform: translateX(-100%);}
+}
+@keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+.container{
+    animation-name: fadeIn;
+    animation-duration: 0.6s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+
+/* ==================== SUBMISSION PAGE ==================== */
+
+.submissionPage{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #101c25;
+}
+ 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.submissionPrompt{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.submissionPrompt b{
+    animation-name: text-color;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    color:#e79575;
+}
+ 
+@keyframes text-color{
+    25%{color: #ed8632;}
+    50%{color: #ed4558;}
+    75%{color: #a15f99;}
+    100%{color: #e79575;}
+}
+ 
+.moodorb{
+    height: 10vw;
+    padding: 5px;
+}
+
+.submissionGreeting { /*first header*/
+    font-size: 5vw;
+}
+
+.submissionButtons { /*second header*/
+    font-size: 3vw;
+}
+
+/* ==================== SUBMISSION RESULTS ==================== */
+ 
+#myVideo{
+    width: 60vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+#go{
+    border: 0;
+    background-color: #101c25;
+    color:#e79575;
+    animation-name: text-color;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    font-family: arial;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.dispText{
+    color: #fff4de;
+    font-family: arial;
+    font-size: 3vw;
+    font-weight: bold;
+}
+ 
+#player{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
