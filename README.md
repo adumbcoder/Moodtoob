@@ -40,7 +40,7 @@
   ### Email:
   pickensprogramming@gmail.com
 
-  -[Back to Top](#)
+
 
 ## Screenshots:
 ![Screenshot of landing page](./screenshots/1_firstVisit.png)
@@ -50,3 +50,4 @@
 ![Screenshot of successful submission](./screenshots/3_Success.jpg)
 
 ![Screenshot of complete request](./screenshots/4_Return.png)
+  -[Back to Top](#)
