@@ -42,7 +42,7 @@
 
   -[Back to Top](#)
 
-Screenshots:
+##Screenshots:
 ![Screenshot of landing page](./screenshots/1_firstVisit.png)
 
 ![Screenshot of submission prompt](./screenshots/2_Upload.png)
