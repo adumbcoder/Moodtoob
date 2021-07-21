@@ -13,7 +13,8 @@
     [License](#license) |
     [Questions](#questions) |
     [GitHub](#github) |
-    [Email](#email)
+    [Email](#email) |
+    [Screenshots](#screenshots)
     
   ## Description:
   Music is wonderful and so is music discovery! By recommending content in a new way, we give users a route for discovery.
