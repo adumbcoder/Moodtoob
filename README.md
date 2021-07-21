@@ -1,18 +1,47 @@
-# Moodtoob
+ 
+  # Moodtoob 
 
-## An easy mood based recommender for music videos. ##
+  ![License](https://img.shields.io/static/v1?label=License&message=none&color=green)
 
-Music is wonderful and so is music discovery! By recommending content in a new way, we give users a route for discovery. 
 
-Users pass our application a selfie, or upload an image from their computer. the Face++ API then analyzes the image, determines users mood, and returns a selection of Youtube videos based on their mood. 
+  
+  [Description](#description) |
+    [Installation](#installation) |
+    [URL](#url) |
+    [Contributions](#contributions) |
+    [Tests](#tests) |
+    [License](#license) |
+    [Questions](#questions) |
+    [GitHub](#github) |
+    [Email](#email)
+    
+  ## Description:
+  Music is wonderful and so is music discovery! By recommending content in a new way, we give users a route for discovery.
 
-Deployed site:[www.moodtoob.com](https://www.moodtoob.com)
+  ### Installation:
+  Users pass our application a selfie, or upload an image from their computer. the Face++ API then analyzes the image, determines users mood, and returns a selection of Youtube videos based on their mood.
 
-Private working repository:(https://github.com/DeseanCarter/Moodtoob-)
+  ### URL:
+  www.moodtoob.com
 
-Public working respository:(https://github.com/DeseanCarter/Moodtoob) 
+  ### Contributions:
+  n/a
 
-My repo:(https://github.com/adumbcoder/Moodtoob-joshua)
+  ### Tests:
+  n/a
+
+  ### License:
+
+  [Common License source](https://opensource.org/licenses)
+  ## Questions.
+  ### GitHub:
+  [Adumbcoder](https://adumbcoder.github.io/PersonalProfile/)
+
+  ### Email:
+  pickensprogramming@gmail.com
+
+  -[Back to Top](#)
+
 
 ![Screenshot of landing page](./screenshots/1_firstVisit.png)
 
